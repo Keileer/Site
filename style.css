@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
+
+*{
+    padding: 0ch;
+    margin: 0ch;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Nunito', sans-serif;}
+
+.menu{
+    text-align: center;
+    background-color: #262626;
+}
+
+.menu a{
+    text-transform: capitalize;
+    color: white;
+    margin: 0 15px;
+    display: inline-block;
+    padding: 20px 40px;
+}
+.header h1, .header p{
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 5px 20px black;
+}
+.header{
+    background-image: url(images\ 2/mac2.jpg);
+    padding: 500px 0;
+    background-size: cover;
+    text-align: center;
+}
+.title{
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+.aboutcontent{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 70%;
+    margin: auto;
+    background-color: #262626;
+    color: white;
+    padding: 50px 0;
+}
+.about-img img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.about-us{
+    background-color: #262626;
+}
+.about-p p{
+    line-height: 20px;
+    text-align: justify;
+}
+.about-p{
+    padding: 20px;
+}
+.about-img{
+    padding: 0 20px;
+}
+.member button{
+    width: 100%;
+    padding: 10px 0;
+    font-size:16px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+.member{
+    width: 20%;
+    box-shadow: 2px 2px 15px -6px black;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+}
+.member img{
+    width: 100%;
+    border-radius: 15px;
+}
+.member p{
+    text-align: center;
+    margin: 15px 0;
+}
+.member h2{
+    text-align: center;
+}
+.team-content{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+
+}
+.team{
+    background-color: #2d2d2d;
+}
+.tarif ul{
+    box-shadow: 2px 2px 15px -6px black;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+}
+.tarif li{
+    padding: 25px 0;
+    text-transform: capitalize;
+}
+.tarif button{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #2d2d2d;
+    color: white;
+}
+.common{
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+.tarifs-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.tarifs{
+    background-color: #262626;
+}
+.tarif{
+    width: 20%;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+#medium .common{
+    padding: 30px;
+    font-size: 22px;
+    background-color: tomato;
+    color: white;
+    display: block;
+}
+#medium li{
+    font-size: 22px;
+    padding: 30px;
+}
+#medium{
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+#second{
+    position: relative;
+    z-index: 1;
+}
+.feedback-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 60%;
+    margin: auto;
+}
+.feedback-container{
+    background-color: #2d2d2d;
+    color: white;
+    padding: 50px 0;
+}
+.data img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.data input{
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+}
+.data button{
+    display: block;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+.data p{
+    margin: 10px 0;
+}
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+}
+.map iframe{
+    border-radius: 10px;
+}
+.feedback{
+    background-color: #2d2d2d;
+}
+
+
+@media(max-width: 500px){
+   .header{
+    background-position: center;
+    padding: 150px 0;
+   }
+   .header h1{
+    font-size: 18px;
+   }
+   .team-content{
+       display: block;
+   }
+   .member{
+       width: 80%;
+       margin: auto;
+       margin-bottom: 20px;
+   }
+   .menu a{
+       display: block;
+   }
+   .aboutcontent{
+       display: block;
+       width: 80%;
+   }
+   .aboutcontent img{
+       display: none;
+   }
+   .tarifs-content{
+       display: block;
+   }
+   .tarif{
+    width: 80%;
+    margin: 10px auto;
+   }
+   .feedback-container{
+       display: block;
+       width: 80%;
+   }
+}
